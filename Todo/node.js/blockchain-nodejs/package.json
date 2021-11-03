@@ -1,0 +1,46 @@
+{
+  "name": "blockchain-nodejs",
+  "version": "1.0.0",
+  "node": ">=4.0.0",
+  "description": "Simple blockchain implementation with the Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobvel/blockchain-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blockchain"
+  ],
+  "author": "kobvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kobvel/blockchain-nodejs/issues"
+  },
+  "homepage": "https://github.com/kobvel/blockchain-nodejs#readme",
+  "devDependencies": {
+    "@types/sinon-chai": "^2.7.29",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.16.0",
+    "eslint-plugin-node": "^5.2.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^5.0.0",
+    "sinon": "^4.2.1",
+    "sinon-chai": "^2.14.0",
+    "validator": "^9.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.2",
+    "underscore": "^1.8.3"
+  }
+}
